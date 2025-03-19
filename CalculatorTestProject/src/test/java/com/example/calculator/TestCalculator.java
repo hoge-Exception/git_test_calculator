@@ -16,7 +16,6 @@ class TestCalculator {
 	private int expected;
 	private int actual;
 	private boolean isActual;
-	private boolean condition;
 
 	@BeforeAll
 	static void initAll() throws Exception {
@@ -49,6 +48,7 @@ class TestCalculator {
         // 負の数を扱えるかを確認
         expected = 1;
         actual = calculator.add(-2, 3);
+        assertEquals(expected, actual);
     }
 	
 	@Test

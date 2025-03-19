@@ -1,5 +1,7 @@
 package com.example.calculator;
 
+// 別ブランチのコミットのためコメントを追加しました。
+
 public class Calculator {
     public int add(int a, int b) {
         return a + b;
