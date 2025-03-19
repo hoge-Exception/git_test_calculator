@@ -2,7 +2,7 @@ package com.example.calculator;
 
 public class Calculator {
 	
-//	林テスト
+//	林テスト01
 	
 
     // 既存の基本的なメソッド（一部改良）
