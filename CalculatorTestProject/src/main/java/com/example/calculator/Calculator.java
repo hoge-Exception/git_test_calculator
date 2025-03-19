@@ -106,4 +106,32 @@ public class Calculator {
                 throw new UnsupportedOperationException("Unsupported operation: " + operation);
         }
     }
+    
+    /**
+     * 与えられた数値が特定の条件に基づいてカテゴリに分類されるかを判定。
+     * 2重の条件分岐を含み、例外もスローする可能性あり。
+     * @param number 判定対象の数値
+     * @param threshold 閾値
+     * @return カテゴリ名（"Small", "Medium", "Large"）または "Unknown"
+     * @throws IllegalArgumentException 閾値が負の場合
+     */
+    public String categorizeNumber(int number, int threshold) {
+        if (threshold < 0) {
+            throw new IllegalArgumentException("Threshold cannot be negative");
+        }
+
+        if (number < threshold) {
+            if (number < 0) {
+                return "Small"; // 負の数かつ閾値未満
+            } else {
+                return "Medium"; // 正の数だが閾値未満
+            }
+        } else {
+            if (number > threshold * 2) {
+                return "Large"; // 閾値の2倍を超える
+            } else {
+                return "Unknown"; // 閾値以上だが2倍以下
+            }
+        }
+    }
 }
