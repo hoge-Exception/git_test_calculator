@@ -1,6 +1,9 @@
 package com.example.calculator;
 
 public class Calculator {
+	
+//	林テスト0101
+	
 
     // 既存の基本的なメソッド（一部改良）
     public int add(int a, int b) {
