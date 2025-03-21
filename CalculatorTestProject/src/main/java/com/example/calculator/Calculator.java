@@ -3,7 +3,7 @@ package com.example.calculator;
 public class Calculator {
 	
 //	林テスト0101
-//	0321のテスト追加
+//	0321のテスト追加01
 	
 
     // 既存の基本的なメソッド（一部改良）
